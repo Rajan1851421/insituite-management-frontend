@@ -22,7 +22,7 @@ function CollectFee() {
 
 
   const getcourses = () => {
-    axios.get(`http://localhost:3000/course/all-courses/`, {
+    axios.get(`https://insituite-management-backend.onrender.com/course/all-courses/`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('stoken')}`,
         'Content-Type': 'multipart/form-data',
@@ -42,7 +42,7 @@ function CollectFee() {
   const submitHandler = (e) => {
     setLoading(true)
     e.preventDefault()
-    axios.post(`http://localhost:3000/fee/add-fee`, {
+    axios.post(`https://insituite-management-backend.onrender.com/fee/add-fee`, {
       fullName: fullName,
       amount: amount,
       phone: phone,

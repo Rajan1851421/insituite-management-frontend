@@ -53,7 +53,7 @@ function AddStudent() {
 
     if (location.state) {
       axios.put(
-        `http://localhost:3000/student/${location.state.student._id}`,
+        `https://insituite-management-backend.onrender.com/student/${location.state.student._id}`,
         formData,
         {
           headers: {
@@ -83,7 +83,7 @@ function AddStudent() {
     else {
 
 
-      axios.post('http://localhost:3000/student/add-student', formData,
+      axios.post('https://insituite-management-backend.onrender.com/student/add-student', formData,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('stoken')}`,
@@ -113,7 +113,7 @@ function AddStudent() {
   };
 
   const getcourses = () => {
-    axios.get(`http://localhost:3000/course/all-courses/`, {
+    axios.get(`https://insituite-management-backend.onrender.com/course/all-courses/`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('stoken')}`,
         'Content-Type': 'multipart/form-data',

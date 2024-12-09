@@ -14,7 +14,7 @@ function Courses() {
 
   const getCourses = () => {
     axios
-      .get(`http://localhost:3000/course/all-courses/`, {
+      .get(`https://insituite-management-backend.onrender.com/course/all-courses/`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('stoken')}`,
           'Content-Type': 'multipart/form-data',

@@ -15,7 +15,7 @@ function Signup() {
     const submitHandler = async (e) => {
         setLoading(true)
         e.preventDefault();
-        axios.post(`http://localhost:3000/user/login`,{
+        axios.post(`https://insituite-management-backend.onrender.com/user/login`,{
             email:email,
             password:password
         })

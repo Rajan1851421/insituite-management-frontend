@@ -19,7 +19,7 @@ function Home() {
 
   const getHomeDetails = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/course/home", {
+      const response = await axios.get("https://insituite-management-backend.onrender.comc/ourse/home", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("stoken")}`,
           "Content-Type": "multipart/form-data",

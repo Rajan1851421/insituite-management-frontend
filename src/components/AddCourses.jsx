@@ -62,7 +62,7 @@ function AddCourses() {
 
     if (location.state) {
       axios.put(
-        `http://localhost:3000/course/update-course/${location.state.courseDetails._id}`,
+        `https://insituite-management-backend.onrender.com/course/update-course/${location.state.courseDetails._id}`,
         formData,
         {
           headers: {
@@ -85,7 +85,7 @@ function AddCourses() {
 
 
     axios.post(
-      'http://localhost:3000/course/add-course',
+      'https://insituite-management-backend.onrender.com/course/add-course',
       formData,
       {
         headers: {

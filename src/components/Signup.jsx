@@ -31,7 +31,7 @@ function Signup() {
             formData.append('password', password);
             formData.append('image', image);
             setLoading(true)
-            const response = await axios.post('http://localhost:3000/user/signup', formData, {
+            const response = await axios.post('https://insituite-management-backend.onrender.com/user/signup', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

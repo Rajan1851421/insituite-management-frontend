@@ -13,7 +13,7 @@ function Student() {
   const getStudentList = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/student/all-students`,
+        `https://insituite-management-backend.onrender.com/student/all-students`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('stoken')}`,

@@ -13,7 +13,7 @@ function PaymentHostory() {
 
 
   const getPaymentHistory = () => {
-    axios.get(`http://localhost:3000/fee/payment-history`, {
+    axios.get(`https://insituite-management-backend.onrender.com/fee/payment-history`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('stoken')}`,
         'Content-Type': 'multipart/form-data',

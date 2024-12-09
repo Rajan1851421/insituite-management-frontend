@@ -27,7 +27,7 @@ function StudentDetails() {
     const getCourseDetails = async () => {
         try {
             const response = await axios.get(
-                `http://localhost:3000/student/student-detail/${id}`,
+                `https://insituite-management-backend.onrender.com/student/student-detail/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('stoken')}`,
@@ -49,7 +49,7 @@ function StudentDetails() {
         console.log(id)
         if (window.confirm("Are you sure you want to delete this course?")) {
             try {
-                const response = await axios.delete(`http://localhost:3000/student/${id}`, {
+                const response = await axios.delete(`https://insituite-management-backend.onrender.com/student/${id}`, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('stoken')}`,
                         'Content-Type': 'multipart/form-data',
