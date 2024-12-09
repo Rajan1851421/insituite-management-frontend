@@ -73,9 +73,12 @@ function AddStudent() {
           setPhone('');
           setImageUrl('');
           navigate('/dashboard/student-detail/' + location.state.student._id)
+          setLoading(false)
         })
         .catch((error) => {
           console.error('Error adding student:', error);
+          toast.error("Something went to wrong")
+          setLoading(false)
 
         })
     }
@@ -94,7 +97,7 @@ function AddStudent() {
         .then((response) => {
           console.log('Student added successfully:', response.data);
           toast.success(response.data.message);
-
+          setLoading(false)
           // Reset form fields
           setFullName('');
           setEmail('');
@@ -106,6 +109,7 @@ function AddStudent() {
         .catch((error) => {
           console.error('Error adding student:', error);
           toast.error('Failed to add student. Please try again.');
+          setLoading(false)
         })
     }
 
