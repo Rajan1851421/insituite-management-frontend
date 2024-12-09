@@ -1,0 +1,92 @@
+/* signup css */
+.signup-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-box {
+  width: 80%;
+  height: 80vh;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.signup-left {
+  width: 50%;
+  background-color: #2e0374;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.book-logo {
+  height: 220px;
+  width: 220px;
+}
+.signup-left-heading {
+  color: white;
+}
+.signup-left-para {
+  color: rgb(155, 211, 3);
+  font-size: 12px;
+}
+.signup-right {
+  width: 50%;
+  padding: 10px;
+}
+.from {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.from select{
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #a5a5a5;
+  border-radius: 10px;
+  font-size: 15px;
+  height: 40px;
+}
+.from input {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #a5a5a5;
+  border-radius: 10px;
+  font-size: 15px;
+  height: 40px;
+}
+.from button {
+  color: white;
+  border: none;
+  outline: none;
+  background-color: #F65164;
+  width: 80%;
+  font-size: 15px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.from button:hover{
+    background-color: #dd384c;
+}
+.logo-url{
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+}
+.signup_login-Link{
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
